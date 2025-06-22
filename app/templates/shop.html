@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="shop-section">
+  <h2 class="section-title">Our Collection</h2>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="image-container">
+        <img src="{{ url_for('static', filename='/images/_Timeless Luxury_ Exquisite Jewelry for Every Occasion_.jpeg') }}" alt="Rose Gold Necklace">
+      </div>
+      <h3>Rose Gold Necklace</h3>
+      <p>₹12,999</p>
+    </div>
+
+    <div class="product-card">
+      <div class="image-container">
+        <img src="{{ url_for('static', filename='/images/Engagement Ring.jpeg') }}" alt="Diamond Ring">
+      </div>
+      <h3>Elegant Diamond Ring</h3>
+      <p>₹8,499</p>
+    </div>
+
+    <div class="product-card">
+      <div class="image-container">
+        <img src="{{ url_for('static', filename='/images/Pearl Cascade Diamond Necklace Set.jpeg') }}" alt="Pearl Set">
+      </div>
+      <h3>Pearl Set</h3>
+      <p>₹6,999</p>
+    </div>
+
+    <div class="product-card">
+      <div class="image-container">
+        <img src="{{ url_for('static', filename='images/woman-8561067.png') }}" alt="Kundan Necklace">
+      </div>
+      <h3> Bridal Necklace</h3>
+      <p>₹18,299</p>
+    </div>
+
+    <div class="product-card">
+      <div class="image-container">
+        <img src="{{ url_for('static', filename='/images/download (2).jpeg') }}" alt="Gold Bracelet">
+      </div>
+      <h3>Designer Gold Bracelet</h3>
+      <p>₹7,599</p>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

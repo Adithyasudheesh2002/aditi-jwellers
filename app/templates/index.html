@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="video-banner">
+  <video autoplay muted loop playsinline id="homeVideo">
+    <source src="{{ url_for('static', filename='/video/321cadd6052af5d3c30ab21ef03aa667_t4.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay-text">
+    <h2>Welcome to Aditi Jewellers</h2>
+    <p>Where elegance meets tradition</p>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffaf5;
+  color: #4a3b2c;
+  height: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5e1da;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #b8895e;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #b8895e;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #7a4f34;
+}
+
+/* Video Banner */
+.video-banner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-banner video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Overlay Text */
+.overlay-text {
+  position: absolute;
+  text-align: center;
+  background-color: rgba(255, 240, 240, 0.85);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+.overlay-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #a66c43;
+  margin-bottom: 0.8rem;
+}
+
+.overlay-text p {
+  font-size: 1.2rem;
+  color: #4a3b2c;
+}
+
+/* Shop Section */
+.shop-section {
+  padding: 3rem 2rem;
+  background: #fffaf5;
+}
+
+.section-title {
+  text-align: center;
+  color: #b8895e;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 2rem;
+  background-color: #fffefc;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fef9f6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form button {
+  background-color: #b8895e;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #a66c43;
+}
